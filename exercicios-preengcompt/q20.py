@@ -6,9 +6,8 @@ válido.
 
 """
 
-nota = int(input('Insira uma nota de 0 a 10: '))
+nota = float(input('Insira uma nota de 0 a 10: '))
 while nota < 0 or nota > 10:
     print('Nota inválida!')
-    nota = int(input('Insira uma nota de 0 a 10: '))   
-    i += 1
+    nota = float(input('Insira uma nota de 0 a 10: '))     
 print('Nota válida!')
