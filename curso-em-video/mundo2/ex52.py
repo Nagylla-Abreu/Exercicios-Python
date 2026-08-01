@@ -1,14 +1,10 @@
 num = int(input('Insira um número inteiro: '))
-
-primo = 1
-
-for i in range(1, num):
-    resto = num % i
-    if resto == 0:
-        primo = 0
-        break
-
-if primo == 1:
-    print(f'{num} é primo')
+divisoes = 0
+for i in range(1, num+1):
+    if num % i == 0:
+        divisoes += 1
+print(f'O número {num} foi divisível {divisoes} vezes')
+if divisoes == 2:
+    print('O número É PRIMO!')
 else:
-    print(f'{num} NÃO é primo')
+    print('E por isso o número NÃO É PRIMO!')
