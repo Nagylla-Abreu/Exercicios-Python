@@ -14,4 +14,5 @@ while True:
     if decisao == 'N':
         break
 
+print('=' * 40)
 print(f'Você digitou os valores {sorted(lista)}')
